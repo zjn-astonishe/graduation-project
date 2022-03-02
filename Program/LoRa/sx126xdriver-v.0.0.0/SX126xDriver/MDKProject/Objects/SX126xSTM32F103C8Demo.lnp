@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\objects\startup_stm32f10x_hd.o"
+".\objects\core_cm3.o"
+".\objects\main.o"
+".\objects\stm32f10x_it.o"
+".\objects\system_stm32f10x.o"
+".\objects\misc.o"
+".\objects\stm32f10x_flash.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_tim.o"
+".\objects\delay.o"
+".\objects\hal_uart.o"
+".\objects\sx126xstm32f103-board.o"
+".\objects\hal_spi.o"
+".\objects\radio.o"
+".\objects\sx126x.o"
+".\objects\sx126x_example_send.o"
+".\objects\sx126x_example_recive.o"
+--strict --scatter ".\Objects\SX126xSTM32F103C8Demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SX126xSTM32F103C8Demo.map" -o .\Objects\SX126xSTM32F103C8Demo.axf
